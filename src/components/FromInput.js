@@ -14,11 +14,15 @@ import {
 import '@reach/combobox/styles.css'
 import ToInput from './ToInput'
 import { useDispatch, useSelector } from 'react-redux'
-import { setDisablerFrom } from '../store/slice'
+import { setDisablerFrom, setIsChoosed } from '../store/slice'
 
 function FromInput({ originRef, destinationRef, duration, distance, setList }) {
   const dispatch = useDispatch()
   const nextTravel = useSelector((state) => state.taxi.nextTravel)
+
+  const beforeZoomChange = () => {
+    dispatch(setIsChoosed(false))
+  }
 
   const {
     ready,
@@ -36,6 +40,7 @@ function FromInput({ originRef, destinationRef, duration, distance, setList }) {
     const { lat, lng } = await getLatLng(results[0])
     setList({ lat, lng })
 
+    dispatch(setIsChoosed(true))
     dispatch(setDisablerFrom(val))
   }
 
@@ -51,6 +56,7 @@ function FromInput({ originRef, destinationRef, duration, distance, setList }) {
         <div className="bg-white rounded-lg py-4 px-5 shadow-lg flex items-center">
           <FiSearch color={'#ffbc00'} className="mr-3" size={26} />
           <ComboboxInput
+            onClick={() => beforeZoomChange()}
             value={value}
             onChange={(e) => setValue(e.target.value)}
             disabled={!ready}

@@ -7,6 +7,7 @@ const initialState = {
   nextTravel: false,
   isLoading: true,
   isOrdered: false,
+  isChoosed: false,
 }
 
 export const taxiSlice = createSlice({
@@ -31,6 +32,9 @@ export const taxiSlice = createSlice({
     setIsOrdered: (state, action) => {
       state.isOrdered = action.payload
     },
+    setIsChoosed: (state, action) => {
+      state.isChoosed = action.payload
+    },
   },
 })
 
@@ -41,5 +45,6 @@ export const {
   setNextTravel,
   setIsLoading,
   setIsOrdered,
+  setIsChoosed,
 } = taxiSlice.actions
 export default taxiSlice.reducer

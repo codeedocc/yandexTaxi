@@ -26,6 +26,7 @@ function Map() {
   const disablerTo = useSelector((state) => state.taxi.disablerTo)
   const isLoading = useSelector((state) => state.taxi.isLoading)
   const isOrdered = useSelector((state) => state.taxi.isOrdered)
+  const isChoosed = useSelector((state) => state.taxi.isChoosed)
 
   const mapRef = useRef()
   const originRef = useRef()
@@ -94,7 +95,6 @@ function Map() {
         >
           <GoogleMap
             center={center}
-            zoom={15}
             mapContainerStyle={{ width: '100%', height: '100vh' }}
             options={{
               zoomControl: false,
@@ -103,6 +103,7 @@ function Map() {
               fullscreenControl: false,
               keyboardShortcuts: false,
               clickableIcons: false,
+              zoom: isChoosed ? 17 : 15,
             }}
             onLoad={onLoad}
           >
