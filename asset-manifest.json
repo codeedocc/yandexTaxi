@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/yandexTaxi/static/css/main.204b0b17.css",
-    "main.js": "/yandexTaxi/static/js/main.a9a69a18.js",
+    "main.js": "/yandexTaxi/static/js/main.13572020.js",
     "static/media/economy-icon.png": "/yandexTaxi/static/media/economy-icon.770ed47dba276b5d894f.png",
     "static/media/comfort-plus-icon.png": "/yandexTaxi/static/media/comfort-plus-icon.593dfd515f5c4d8e0ada.png",
     "static/media/business-icon.png": "/yandexTaxi/static/media/business-icon.3c6e77409b198411564e.png",
@@ -9,10 +9,10 @@
     "static/media/preloader.jpg": "/yandexTaxi/static/media/preloader.b7226633202d8c016cc7.jpg",
     "index.html": "/yandexTaxi/index.html",
     "main.204b0b17.css.map": "/yandexTaxi/static/css/main.204b0b17.css.map",
-    "main.a9a69a18.js.map": "/yandexTaxi/static/js/main.a9a69a18.js.map"
+    "main.13572020.js.map": "/yandexTaxi/static/js/main.13572020.js.map"
   },
   "entrypoints": [
     "static/css/main.204b0b17.css",
-    "static/js/main.a9a69a18.js"
+    "static/js/main.13572020.js"
   ]
 }
