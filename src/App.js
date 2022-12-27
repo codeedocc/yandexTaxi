@@ -6,7 +6,7 @@ import { store } from './store/store'
 
 function App() {
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: '',
+    googleMapsApiKey: process.env.REACT_APP_SECRET_KEY,
     libraries: ['places'],
   })
 

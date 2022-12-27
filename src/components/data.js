@@ -8,24 +8,24 @@ export const optionList = [
     _id: 1,
     title: 'Эконом',
     img: economy,
-    multiplier: 13,
+    multiplier: 14,
   },
   {
     _id: 2,
     title: 'Комфорт',
     img: comfort,
-    multiplier: 15,
+    multiplier: 16,
   },
   {
     _id: 3,
     title: 'Комфорт+',
     img: comfortPlus,
-    multiplier: 18,
+    multiplier: 19,
   },
   {
     _id: 4,
     title: 'Бизнес',
     img: business,
-    multiplier: 26,
+    multiplier: 27,
   },
 ]
